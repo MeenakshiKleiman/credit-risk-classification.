@@ -19,25 +19,25 @@ This imbalance suggests that the majority of the loans in the dataset are health
 
 ### Stages of the Machine Learning Process:
 
-# Data Preparation: The dataset was separated into features (X) and labels (y). The features include all columns except loan_status, which is the label.
-# Data Splitting: The data was split into training and testing sets using train_test_split, with a random_state of 1 to ensure reproducibility.
-# Model Selection: A Logistic Regression model was chosen, which is commonly used for binary classification tasks.
-# Model Training: The model was trained on the training data (X_train, y_train).
-# Model Evaluation: The model's predictions on the test data were evaluated using a confusion matrix and a classification report.
+-Data Preparation: The dataset was separated into features (X) and labels (y). The features include all columns except loan_status, which is the label.
+-Data Splitting: The data was split into training and testing sets using train_test_split, with a random_state of 1 to ensure reproducibility.
+-Model Selection: A Logistic Regression model was chosen, which is commonly used for binary classification tasks.
+-Model Training: The model was trained on the training data (X_train, y_train).
+-Model Evaluation: The model's predictions on the test data were evaluated using a confusion matrix and a classification report.
 
 ### Methods Used:
 
-# Logistic Regression: The Logistic Regression model was instantiated with the lbfgs solver and a random_state of 1 to ensure consistent results. The model was then trained on the training data.
+#### Logistic Regression: The Logistic Regression model was instantiated with the lbfgs solver and a random_state of 1 to ensure consistent results. The model was then trained on the training data.
 Results
-# Logistic Regression Model:
-# Accuracy: The overall accuracy of the model is reflected in the classification report. Based on the previous metrics provided, the model is likely to have high accuracy due to the imbalanced nature of the dataset.
+- Logistic Regression Model:
+- Accuracy: The overall accuracy of the model is reflected in the classification report. Based on the previous metrics provided, the model is likely to have high accuracy due to the imbalanced nature of the dataset.
 Precision for Class 1 (High-Risk Loans): The precision value will show how many of the loans predicted as high-risk were actually high-risk. Given the imbalanced dataset, the precision for class 1 might be lower.
 Recall for Class 1 (High-Risk Loans): The recall value will indicate how well the model identifies actual high-risk loans. In imbalanced datasets, recall is crucial as it shows the model's ability to catch the minority class (1).
-# Confusion Matrix: The confusion matrix will provide a breakdown of true positives, true negatives, false positives, and false negatives, helping to understand the model's strengths and weaknesses.
+#### Confusion Matrix: The confusion matrix will provide a breakdown of true positives, true negatives, false positives, and false negatives, helping to understand the model's strengths and weaknesses.
 
 
 ### Summary
-# Best Performing Model:
+#### Best Performing Model:
 
 The Logistic Regression model performs well overall, with high accuracy. However, due to the class imbalance, the precision and recall for the high-risk loans (1) might not be perfect.
 The model is likely better at predicting healthy loans (0) than high-risk loans (1), given the higher prevalence of healthy loans in the dataset.
